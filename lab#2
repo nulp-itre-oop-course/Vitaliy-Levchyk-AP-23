@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+
+int main()
+{ while (true) {
+int a, b;
+    int x;
+    std::cout << "ВВЕДІТЬ ЗНАЧЕННЯ X: ";
+    std::cin>>x;
+    double y;
+    a = 1;
+    b = 1;
+    if(x<=4){
+        double x_1 = std::cbrt(sin(a * x + 10))*2;
+        std::cout << x_1 << std::endl;
+    }
+    else if(4 < x && x < 5){
+        double x_2 = std::pow(log10(abs(a+b*x)+1), 2);
+        std::cout << x_2 << std::endl;
+    }
+    else{
+        double x_3 = std::pow(x,3)/(pow(a,2) + pow(b,2) + 2);
+        std::cout << x_3 << std::endl;
+    }
+    }   
+    return 0; 
+}
